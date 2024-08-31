@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../multimedia/fondo moto.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bienvenida {
+    color: rgb(24, 24, 24); 
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.322);
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    position: relative; 
+    z-index: 10; 
+}
+
+h1 {
+    color: rgba(51, 51, 51, 1);
+    margin: 8px auto; 
+    width: 800px; 
+    text-align: center;
+}
+
+.btn, button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+    border: none; 
+}
+
+.btn-primary {
+    background-color: rgba(2, 162, 236, 0.986); 
+    color: rgba(255, 255, 255, 1); 
+}
+
+.btn-success {
+    background-color: rgba(40, 167, 69, 1); 
+    color: rgba(255, 255, 255, 1); 
+}
+
+.btn-danger {
+    background-color: rgba(220, 53, 69, 1); 
+    color: rgba(255, 255, 255, 1); 
+}
+
+.btn:hover, button:hover {
+    opacity: 0.9;
+    background-color: rgba(0, 86, 179, 1);
+}
+
+button {
+    margin-top: 20px;
+    background-color: rgba(91, 192, 222, 1); 
+    color: rgba(255, 255, 255, 1); 
+}
+
+button:hover {
+    background-color: rgba(70, 184, 218, 1); 
+}
+
+#turnos {
+    text-align: center;
+}
+
+.contenedor-turnos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.turno-container {
+    padding: 15px;
+    border: 1px solid rgba(204, 204, 204, 1); 
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 1); 
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s, background-color 0.3s ease;
+}
+
+.turno-container:hover {
+    transform: scale(1.05);
+    background-color: rgba(231, 243, 255, 1); 
+}
+
+.turno-container.reservado {
+    background-color: rgba(40, 167, 69, 1); 
+    color: rgba(255, 255, 255, 1);
+    cursor: not-allowed;
+}
+
+.turno-container.seleccionado {
+    background-color: rgba(0, 123, 255, 1); 
+    color: rgba(255, 255, 255, 1); 
+}
+
+#usuarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid rgba(204, 204, 204, 1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(249, 249, 249, 1);
+}
+
+#usuarios label {
+    margin-bottom: 10px;
+}
+
+#usuarios input[type="text"],
+#usuarios input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(204, 204, 204, 1); 
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.card {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(204, 204, 204, 1); 
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgba(248, 249, 250, 1); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card span {
+    font-size: 16px;
+    color: rgba(51, 51, 51, 1); 
+    font-weight: bold;
+}
+
+.formulario-usuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid rgba(204, 204, 204, 1); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.formulario-usuario label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.formulario-usuario input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(204, 204, 204, 1); 
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.formulario-usuario button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 123, 255, 1); 
+    color: rgba(255, 255, 255, 1); 
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-usuario button:hover {
+    background-color: rgba(0, 86, 179, 1); 
+}
+
+.titulo-h2 {
+    margin: 100px auto; 
+    background-color: rgba(8, 8, 8, 0.233);
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    padding: 20px; 
+    max-width: 300px; 
+    width: 100%; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    text-align: center; 
+}
+
+.titulo-h3 {
+    margin: 50px auto; 
+    background-color: rgba(8, 8, 8, 0.233);
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    padding: 20px; 
+    max-width: 800px; 
+    width: calc(100% - 400px); 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
+    text-align: center; 
+}
+
+.sin-turnos {
+    font-size: 28px;
+    background-color: rgba(8, 8, 8, 0.233);
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto; 
+    width: 100%; 
+}
+
+
+
+
+
+
+
+
+
